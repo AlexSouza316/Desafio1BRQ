@@ -1,0 +1,144 @@
+:root {
+    --vermelho: hsl(0, 100%, 74%);
+    --verde: hsl(154, 59%, 51%);
+    --azul: hsl(248, 32%, 49%);
+    --azul-escuro:hsl(249, 10%, 26%);
+    --cinza-azulado:hsl(246, 25%, 77%);
+    --branco: #ffffff;
+    --fonte-principal: "poppins";
+
+}
+
+body {
+    background-color: var(--vermelho);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    width: 1728px;
+}   
+
+.principal {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    background-image: url("images/bg-intro-desktop.png");
+    width: 100vw;
+    align-items: center;
+}
+
+.container__principal,
+.container__secundario {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco)
+}
+
+
+.container__principal {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container__secundario {
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+}
+
+.container__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 2em;
+    padding: 1em;
+}
+
+.container__texto {
+    margin: 0 8em;
+    padding: 1em;
+}
+
+.destaque {
+    font: bold;
+}
+
+.mensagem__aviso {
+    background-color: var(--azul);
+    width: 50%;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    color: var(--branco);
+    display: block;
+    text-decoration: none;
+    margin: 1em;
+    text-align: center;
+    
+}
+
+.input-padrao {
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    color: var(--azul-escuro);
+    display: block;
+    border: 1px solid var(--cinza-azulado);
+    width: 90%;
+}
+
+.input-padrao:focus {
+    outline-color: var(--azul);
+    border: 0.5px solid;
+}
+
+
+
+.enviar {
+    background-color: var(--verde);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 1.5em;
+    margin: 1em;
+    color: var(--branco);
+    display: block;
+    width: 95%;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.enviar:hover {
+    color: var(--azul);
+}
+
+.card {
+    width: 50%;
+    background: var(--branco);
+    color: var(--cinza-azulado);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 1em;
+    padding: 1em 1em 2em 1em;
+}
+
+.termos-de-uso a {
+    text-decoration: none;
+    color: var(--vermelho);
+    font-weight: bold;
+}
+
+.termos-de-uso {
+    text-align: center;
+    font-size: 10px;
+}
+
+.termos-de-uso a:hover {
+    color: var(--verde);
+}
+
+span {
+    font-weight: bold;
+}
+
